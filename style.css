@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    background: rgb(243, 243, 243);
+    padding: 50px 0px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;  
+    justify-content: space-between;
+}
+
+h1,
+h2,
+h3 {
+    color: rgb(47, 47, 116);
+    font-family: 'lora', serif;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+a {
+    color: rgb(121, 198, 228);
+    font-weight: 700;
+}
+
+a:hover,
+a:focus {
+    color: rgb(13, 116, 172);
+}
+
+strong {
+    font-weight: 700;
+}
+
+.article-title {
+    font-size: 24px;
+}
+
+p {
+    padding: 20px 0px;
+    line-height: 27px;
+    font-size: 19px;
+}
+
+.article-read-more,
+.article-info {
+    font-size: 15px;
+}
+
+.article-info {
+    margin: 24px 0;
+    padding: 0;
+}
+
+.article-read-more {
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(121, 198, 228);
+}
+
+.article-read-more:hover,
+.article-read-more:focus{
+    color: rgb(13, 116, 172);
+    text-decoration: underline;
+}
+
+.subtitle {
+    color: rgb(0, 155, 155);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700px;
+    padding: 0;
+} 
+
+/* navigations */
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+nav li {
+    margin: 10px 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(114, 114, 114);
+    padding: 5px 0px;
+}
+
+nav a:hover,
+nav a:focus {
+    border-bottom: 2px solid black;
+    color: rgb(0, 0, 0);
+}
+
+main {
+    width: 70%;
+}
+
+.sidebar {
+    width: 25%;
+    min-width: 200px;
+    margin-left: 20px;
+}
+
+/* articles */
+
+.article-featured {
+    border-bottom: black 1px solid;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+}
+
+.article-recent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.recent-main {
+    width: 60%;
+}
+
+.recent-secondary {
+    width: 30%;
+}
+
+.article-recent-main {
+    width: 65%;
+}
+
+.article-image {
+    width: 100%;
+    padding: 0px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.last-article-image {
+    width: 100%;
+    padding: 0px;
+    height: 250px;
+    object-fit: cover;
+    object-position: 0px;
+}
+
+.article-featured-image {
+    height: 320px;
+    width: 100%;
+}
+
+footer {
+    background-color: rgb(36, 36, 100);
+    text-align: center;
+}
+
+.footer-p-1 {
+    padding: 50px 10px;
+    padding-bottom: 0px;
+    color: white;
+}
+
+.footer-p-2 {
+    padding-bottom: 50px;
+    padding-top: 10px;
+    color: rgb(146, 146, 146);
+}
+
+.sidebar-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(211, 211, 211);
+    height: min-content;
+    margin-bottom: 30px;
+}
+
+.sidebar-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(211, 211, 211);
+    height: min-content;
+}
+
+.sidebar-widget-1 {
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+.sidebar-widget-2 {
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.widget-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.widget-image {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.widget-body {
+    width: 100%;
+    font-size: 18px;
+}
+
+h3 {
+    margin: 15px 0px;
+    border-bottom: black 1px solid;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+@media (max-width: 880px) {
+    main {
+        margin: 0 20px;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    header {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .container-flex {
+        flex-direction: column;
+        padding: 0 20px;
+        margin-bottom: 50px;
+    }
+
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    .article-recent {
+        flex-direction: column;
+    }
+
+    .recent-secondary {
+        width: 100%;
+    }
+
+    .article-recent-main {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: fit-content;
+        margin: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
